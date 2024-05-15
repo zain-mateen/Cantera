@@ -1,0 +1,359 @@
+:root {
+    --primary-color: #33AF88;
+    --bg-color: #020710;
+    --bg2-color: #252525;
+    --bg3-color: #2E3033;
+    --black: #000000;
+    --white: #FFFFFF;
+    --white-5: rgba(255, 253, 253, 0.05);
+    --blue-color: #2D68FF;
+    --primary-btn-color: #36BB91;
+    --collection-primary-btn-color: #B6FB44;
+    --crypto-primary-color: #43A5E7;
+    --what-we-do-primary-color: #2D68FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-size: 62.5%;
+}
+.container-fluid{
+    padding: 0 45px;
+}
+
+@media (max-width: 991px) {
+    .container-fluid{
+        padding: 0 15px;
+    }
+    br{
+        display: none;
+    }
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    padding: 0;
+}
+
+.heading-h1{
+    font-size: 52px;
+    line-height: 64px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+}
+@media (max-width: 575px) {
+    .heading-h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+.heading-h2{
+    font-size: 36px;
+    line-height: 48px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+}
+@media (max-width: 575px) {
+    .heading-h2{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+.heading-h4{
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+}
+.heading-lb{
+    font-size: 20px;
+    line-height: 36px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+}
+.heading-l{
+    font-size: 20px;
+    line-height: 36px;
+    font-family: "Roboto-Medium";
+    letter-spacing: 2px;
+}
+.heading-mb{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+}
+.heading-m{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Roboto-Regular";
+    letter-spacing: 2px;
+}
+.heading-sb{
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+}
+.heading-s{
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Regular";
+    letter-spacing: 2px;
+}
+
+.marketPlace-primary-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 46px;
+    background-color: var(--primary-btn-color);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--white);
+    transition: .3s;
+}
+.marketPlace-primary-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primary-btn-color);
+    color: var(--primary-btn-color);
+}
+
+.marketPlace-border-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 46px;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--white);
+    transition: .3s;
+}
+.marketPlace-border-btn:hover{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.collection-primary-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 46px;
+    background-color: var(--collection-primary-btn-color);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--black);
+    transition: .3s;
+}
+.collection-primary-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--collection-primary-btn-color);
+    color: var(--collection-primary-btn-color);
+}
+.collection-2-primary-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 46px;
+    background-color: var(--white);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--black);
+    transition: .3s;
+}
+.collection-2-primary-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+.collection-border-btn{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 46px;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--white);
+    transition: .3s;
+}
+.collection-border-btn:hover{
+    border: 2px solid var(--collection-primary-btn-color);
+    color: var(--collection-primary-btn-color);
+}
+
+.crypto-primary-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 46px;
+    background-color: var(--crypto-primary-color);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--white);
+    transition: .3s;
+}
+.crypto-primary-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--crypto-primary-color);
+    color: var(--crypto-primary-color);
+}
+
+.crypto-2-primary-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 46px;
+    background-color: var(--white);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--black);
+    transition: .3s;
+}
+.crypto-2-primary-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+.crypto-border-btn{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 46px;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--white);
+    transition: .3s;
+}
+.crypto-border-btn:hover{
+    border: 2px solid var(--crypto-primary-color);
+    color: var(--crypto-primary-color);
+}
+.what-we-do-primary-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 46px;
+    background-color: var(--what-we-do-primary-color);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--white);
+    transition: .3s;
+}
+.what-we-do-primary-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--what-we-do-primary-color);
+    color: var(--what-we-do-primary-color);
+}
+.input-btn{
+    padding: 12px 46px;
+    background-color: var(--blue-color);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    color: var(--white);
+    transition: .3s;
+}
+.input-btn:hover{
+    background-color: var(--white);
+    border: 2px solid var(--blue-color);
+    color: var(--blue-color);
+}
+
+
+.input{
+    width: 100%;
+    padding: 16px 20px 16px 20px;
+    background-color: var(--white);
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+    color: var(--black);
+    border: none;
+    outline: none;
+}
+.input::placeholder{
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+    color: var(--black);
+}
+
+.form-input{
+    width: 100%;
+    padding: 16px 20px 16px 20px;
+    background-color: var(--bg3-color);
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+    color: var(--black);
+    border: none;
+    outline: none;
+}
+
+.form-input::placeholder{
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Roboto-Bold";
+    letter-spacing: 2px;
+    color: var(--white);
+}
